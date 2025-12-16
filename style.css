@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: aliceblue;
+    padding: 0px;
+    font-size: 15px;
+    width: 100%;
+    min-height: 100vh;
+}
+#header{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+#header h4{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-left: 5px;
+    background-color: rgb(210, 242, 245) ;
+    color: rgb(8, 8, 8);
+    text-transform: capitalize;
+}
+.header-container{
+    padding: 10px 10px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+}
+.header-content{
+    margin-top: 30px;
+    display: block;
+    align-items: center;
+}
+.header-content p{
+    font-size: 25px;
+    color: rgb(8, 8, 8);
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+.header-content h2{
+    font-size: 50px;
+    color: rgb(8, 8, 8);
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.header-content .btns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /*centers the buttons horizontally */
+    gap: 20px; /*adds space between buttons */
+}
+.header-content .btn2{
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+    background-color: rgb(210, 242, 245);
+    color: black;
+    border: black solid 2px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+nav{
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    width: 100%;
+}
+nav ul li{
+    height: 50px;
+    display: flex;
+}
+nav ul li a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    
+}
+nav a:hover{
+    background-color: #f0f0f0;
+}
+.menuBtn{
+    display: none;
+}
+.side-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.562);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.side-bar li{
+    width: 100%;
+}
+@media (max-width:700px) {
+    .hideOnMobile{
+        display: none;
+    }.menuBtn{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .side-bar{
+        width: 100%;
+    }
+    .manuBtn{
+        display: block;
+    }
+}
+.btn1{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(210, 242, 245) ;
+    color: black;
+    border: black solid 2px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+/* services */
+#services{
+    padding: 30px 0px;
+}
+.services-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-card .card{
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.services-card .card .fa-solid{
+    font-size: 40px;
+    color: rgb(78, 194, 202);    
+    text-align: center;
+    margin-bottom: 20px;
+}
+.services-card .card .fa-regular{
+    font-size: 20px;
+    color: rgb(111, 199, 71);    
+    text-align: center;
+    margin-bottom: 20px;
+}
+.services-card .card h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.services-card .card p{
+    font-size: 15px;
+    color: rgb(63, 60, 60);
+    margin-bottom: 20px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.container .types{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#service .container p{
+    text-align: center;
+}
+
+#projects{
+    padding: 30px 0px;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project-list .project-card{
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.project-list img{
+    width: 100%;
+    overflow: hidden;
+    max-height: 200px ;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.project-list h3{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: rgb(8, 8, 8);
+}
+.project-list p{
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: grey;
+}
+.project-list button{
+    border: white;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 20px;
+}
+
+#team{
+    padding: 30px 0px;
+}
+.team-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.team-list .team-card{
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 10px;
+}
+
+
+.main-h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.main-p{
+    text-align: center;
+}
+
+
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.team-card button{
+    padding: 20px;
+    border-radius: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    background-color: rgb(78, 194, 202);
+}
+.team-card h4{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: rgb(8, 8, 8);
+}
+.team-card h5{
+    font-size: 15px;
+    color: rgb(73, 72, 72);
+    margin-bottom: 10px;
+}
+.team-card p{
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: grey;
+    height: 10vh;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+.team-card h6{
+    font-size: 15px;
+    color: rgb(49, 47, 47);
+}
+.team-card .skills{
+    margin-top: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.team-card .skills span{
+    background-color: rgb(204, 207, 209);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px; 
+    margin-right: 5px;
+    gap: 5px;
+}
+#process{
+    padding: 30px 30px;
+}
+.process-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+.process-card{
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+.process-card p{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    color: rgb(8, 8, 8);
+}
+.process-card i{
+    font-size: 30px;
+    color: rgb(78, 194, 202);    
+    text-align: center;
+}
+.whyus-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.whyus-card{
+    background-color: rgba(255, 255, 255, 0.548);
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.whyus-card i{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    color: rgb(78, 194, 202);
+    padding: 20px 20px 10px 2px;    
+
+    text-align: center;
+}
+.whyus-card h3{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.whyus-card p{
+    font-size: 15px;
+    color: rgb(63, 60, 60);
+}
+
+#contact{
+    padding: 60px 0px;
+}
+.col-1{
+    display: block;
+}
+.col-1 h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.col-1 p{
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+.col-1 .box{
+    display: flex;
+    flex-direction: column;
+}
+.col-1 .box input{
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline-color:  rgb(78, 194, 202);
+}
+.col-1 .box button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(78, 194, 202);
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.col-2{
+    flex-basis: 55px;
+}
+.col-2 h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.col-2 div{
+    display: block;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.col-2 .office-hours{
+    display: flex;
+    flex-direction: column;
+
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
